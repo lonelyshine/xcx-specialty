@@ -36,6 +36,7 @@ public class UserController extends BaseController{
 		System.out.println(redisTemplate.opsForValue().get("user2"));
 		System.out.println(redisTemplate.opsForValue().get("user3"));
 		System.out.println(redisTemplate.opsForValue().get("user4"));*/
+		System.out.println("user4");
 		return responseArraySuccess(userService.getUser(userName));
 	}
 }
